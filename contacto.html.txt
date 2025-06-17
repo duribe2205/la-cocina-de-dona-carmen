@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - La Cocina de Doña Carmen</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">??</div>
+    <h1>La Cocina de Doña Carmen</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Mis Recetas</a></li>
+            <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="formulario-contacto">
+    <h2>Solicita tu Cotización</h2>
+    <form action="#">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="comentario">Comentario / Detalles:</label>
+        <textarea id="comentario" name="comentario"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="redes">
+        <h3>Síguenos en Redes Sociales</h3>
+        <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="iconos/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="iconos/whatsapp.png" alt="WhatsApp"></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

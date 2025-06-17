@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestro Trabajo - La Cocina de Doña Carmen</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">??</div>
+    <h1>La Cocina de Doña Carmen</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Mis Recetas</a></li>
+            <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="galeria">
+    <h2>Galería de Imágenes y Videos</h2>
+    <p>Próximamente contenido multimedia sobre nuestras preparaciones artesanales.</p>
+    <img src="imagenes/galletas.jpg" alt="Haciendo galletas">
+    <img src="imagenes/torta.jpg" alt="Decorando una torta">
+    <video controls width="400">
+        <source src="videos/galletas.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Recetas - La Cocina de Doña Carmen</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">??</div>
+    <h1>La Cocina de Doña Carmen</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Mis Recetas</a></li>
+            <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="recetas">
+    <article class="menu">
+        <h2>Menú 1: Galletas de Chocolate</h2>
+        <ul>
+            <li>Harina - 2 tazas</li>
+            <li>Azúcar morena - 1/2 taza</li>
+            <li>Mantequilla - 1/2 taza</li>
+            <li>Huevo - 1 unidad</li>
+            <li>Cacao en polvo - 1/4 taza</li>
+            <li>Chips de chocolate - al gusto</li>
+        </ul>
+        <p><strong>Instrucciones:</strong> Mezclar mantequilla con azúcar, agregar huevo, luego harina y cacao. Agregar chips y hornear a 180°C durante 12 minutos.</p>
+    </article>
+
+    <article class="menu">
+        <h2>Menú 2: Ponquesitos</h2>
+        <ul>
+            <li>Harina - 1 taza</li>
+            <li>Azúcar - 1 taza</li>
+            <li>Huevos - 3 unidades</li>
+            <li>Leche - 1/2 taza</li>
+            <li>Mantequilla derretida - 1/4 taza</li>
+            <li>Vainilla - 1 cucharadita</li>
+        </ul>
+        <p><strong>Instrucciones:</strong> Batir huevos con azúcar hasta cremosa. Agregar leche, vainilla y mantequilla. Incorporar harina poco a poco. Verter en moldes y hornear a 180°C por 20 minutos.</p>
+    </article>
+
+    <article class="menu">
+        <h2>Menú 3: Torta de Vainilla con Crema</h2>
+        <ul>
+            <li>Harina - 2 tazas</li>
+            <li>Azúcar - 1 1/2 tazas</li>
+            <li>Huevos - 4 unidades</li>
+            <li>Leche - 1 taza</li>
+            <li>Vainilla - 2 cucharaditas</li>
+            <li>Crema de leche batida - para decorar</li>
+        </ul>
+        <p><strong>Instrucciones:</strong> Mezclar huevos y azúcar, añadir harina tamizada alternando con leche y vainilla. Hornear a 170°C por 35 minutos. Dejar enfriar y cubrir con crema batida.</p>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

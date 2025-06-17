@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Cocina de Doña Carmen</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">??</div>
+    <h1>La Cocina de Doña Carmen</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recetas.html">Mis Recetas</a></li>
+            <li><a href="trabajo.html">Nuestro Trabajo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner">
+    <img src="imagenes/banner.jpg" alt="Galletas, Ponquesitos y Tortas">
+</section>
+
+<section class="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un emprendimiento dedicado a la elaboración artesanal de dulces tradicionales y postres caseros hechos con amor y pasión por la cocina.</p>
+
+    <h3>Misión</h3>
+    <p>Ofrecer productos de alta calidad elaborados con ingredientes naturales, manteniendo siempre el sabor auténtico de lo hecho en casa, para deleitar los paladares más exigentes.</p>
+
+    <h3>Visión</h3>
+    <p>Llegar a cada hogar con nuestros productos dulces, ser reconocidos como una marca de confianza y referente en repostería artesanal a nivel nacional.</p>
+
+    <h3>Objetivos</h3>
+    <ul>
+        <li>Promover la cultura repostera tradicional.</li>
+        <li>Brindar productos saludables y sin conservantes artificiales.</li>
+        <li>Crear espacios de aprendizaje culinario para niños y adultos.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
