@@ -2,14 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>La Cocina de Doña Carmen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cocina de Doï¿½a Carmen</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"  rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <div class="logo">??</div>
-    <h1>La Cocina de Doña Carmen</h1>
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo La Cocina de Doï¿½a Carmen" width="200">
+    </div>
+    <h1>La Cocina de Doï¿½a Carmen</h1>
+
+    <div class="selector-idioma">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es" selected>Espaï¿½ol</option>
+            <option value="en">English</option>
+            <option value="pt">Portuguï¿½s</option>
+        </select>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -20,31 +34,68 @@
     </nav>
 </header>
 
-<section class="banner">
+<section class="banner" data-aos="fade-up">
     <img src="imagenes/banner.jpg" alt="Galletas, Ponquesitos y Tortas">
 </section>
 
-<section class="quienes-somos">
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos un emprendimiento dedicado a la elaboración artesanal de dulces tradicionales y postres caseros hechos con amor y pasión por la cocina.</p>
+<section class="quienes-somos" data-aos="fade-up" data-aos-delay="200">
+    <h2 data-tr="qs.title">ï¿½Quiï¿½nes somos?</h2>
+    <p data-tr="qs.descripcion">Somos un emprendimiento dedicado a la elaboraciï¿½n artesanal de dulces tradicionales y postres caseros hechos con amor y pasiï¿½n por la cocina.</p>
 
-    <h3>Misión</h3>
-    <p>Ofrecer productos de alta calidad elaborados con ingredientes naturales, manteniendo siempre el sabor auténtico de lo hecho en casa, para deleitar los paladares más exigentes.</p>
+    <h3 data-tr="qs.mision">Misiï¿½n</h3>
+    <p data-tr="qs.mision_texto">Ofrecer productos de alta calidad elaborados con ingredientes naturales, manteniendo siempre el sabor autï¿½ntico de lo hecho en casa, para deleitar los paladares mï¿½s exigentes.</p>
 
-    <h3>Visión</h3>
-    <p>Llegar a cada hogar con nuestros productos dulces, ser reconocidos como una marca de confianza y referente en repostería artesanal a nivel nacional.</p>
+    <h3 data-tr="qs.vision">Visiï¿½n</h3>
+    <p data-tr="qs.vision_texto">Llegar a cada hogar con nuestros productos dulces, ser reconocidos como una marca de confianza y referente en reposterï¿½a artesanal a nivel nacional.</p>
 
-    <h3>Objetivos</h3>
+    <h3 data-tr="qs.objetivos">Objetivos</h3>
     <ul>
-        <li>Promover la cultura repostera tradicional.</li>
-        <li>Brindar productos saludables y sin conservantes artificiales.</li>
-        <li>Crear espacios de aprendizaje culinario para niños y adultos.</li>
+        <li data-tr="qs.obj1">Promover la cultura repostera tradicional.</li>
+        <li data-tr="qs.obj2">Brindar productos saludables y sin conservantes artificiales.</li>
+        <li data-tr="qs.obj3">Crear espacios de aprendizaje culinario para niï¿½os y adultos.</li>
     </ul>
+</section>
+
+<section class="reseï¿½as" data-aos="fade-up" data-aos-delay="400">
+    <h2 data-tr="reseï¿½as.titulo">Reseï¿½as de Clientes</h2>
+    <div id="lista-reseï¿½as">
+        <p data-tr="reseï¿½as.no_hay">Todavï¿½a no hay reseï¿½as.</p>
+    </div>
+
+    <form id="formulario-reseï¿½a" class="formulario-reseï¿½a">
+        <h3 data-tr="reseï¿½as.agregar">Agregar tu opiniï¿½n</h3>
+
+        <label for="nombre-cliente" data-tr="reseï¿½as.nombre">Tu nombre:</label>
+        <input type="text" id="nombre-cliente" required>
+
+        <label for="comentario-cliente" data-tr="reseï¿½as.comentario">Tu comentario:</label>
+        <textarea id="comentario-cliente" required></textarea>
+
+        <label for="rating-cliente" data-tr="reseï¿½as.calificacion">Calificaciï¿½n (1-5):</label>
+        <input type="number" id="rating-cliente" min="1" max="5" required>
+
+        <button type="submit" data-tr="reseï¿½as.enviar">Enviar Reseï¿½a</button>
+    </form>
 </section>
 
 <footer>
     <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
 </footer>
+
+<!-- Botï¿½n de WhatsApp -->
+<a href="https://wa.me/5551234567"  target="_blank" class="whatsapp-button">
+    <img src="iconos/whatsapp.png" alt="Contï¿½ctanos por WhatsApp">
+</a>
+
+<script src="js/idioma.js"></script>
+<script src="js/reseï¿½as.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>

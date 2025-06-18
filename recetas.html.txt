@@ -2,14 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mis Recetas - La Cocina de Doña Carmen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Recetas - La Cocina de DoÃ±a Carmen</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"  rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <div class="logo">??</div>
-    <h1>La Cocina de Doña Carmen</h1>
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo La Cocina de DoÃ±a Carmen" width="200">
+    </div>
+    <h1>La Cocina de DoÃ±a Carmen</h1>
+
+    <div class="selector-idioma">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es" selected>EspaÃ±ol</option>
+            <option value="en">English</option>
+            <option value="pt">PortuguÃªs</option>
+        </select>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -20,50 +34,64 @@
     </nav>
 </header>
 
-<section class="recetas">
+<section class="recetas" data-aos="fade-up">
     <article class="menu">
-        <h2>Menú 1: Galletas de Chocolate</h2>
+        <h2>MenÃº 1: Galletas de Chocolate</h2>
         <ul>
             <li>Harina - 2 tazas</li>
-            <li>Azúcar morena - 1/2 taza</li>
+            <li>AzÃºcar morena - 1/2 taza</li>
             <li>Mantequilla - 1/2 taza</li>
             <li>Huevo - 1 unidad</li>
             <li>Cacao en polvo - 1/4 taza</li>
             <li>Chips de chocolate - al gusto</li>
         </ul>
-        <p><strong>Instrucciones:</strong> Mezclar mantequilla con azúcar, agregar huevo, luego harina y cacao. Agregar chips y hornear a 180°C durante 12 minutos.</p>
+        <p><strong>Instrucciones:</strong> Mezclar mantequilla con azÃºcar, agregar huevo, luego harina y cacao. Agregar chips y hornear a 180Â°C durante 12 minutos.</p>
     </article>
 
     <article class="menu">
-        <h2>Menú 2: Ponquesitos</h2>
+        <h2>MenÃº 2: Ponquesitos</h2>
         <ul>
             <li>Harina - 1 taza</li>
-            <li>Azúcar - 1 taza</li>
+            <li>AzÃºcar - 1 taza</li>
             <li>Huevos - 3 unidades</li>
             <li>Leche - 1/2 taza</li>
             <li>Mantequilla derretida - 1/4 taza</li>
             <li>Vainilla - 1 cucharadita</li>
         </ul>
-        <p><strong>Instrucciones:</strong> Batir huevos con azúcar hasta cremosa. Agregar leche, vainilla y mantequilla. Incorporar harina poco a poco. Verter en moldes y hornear a 180°C por 20 minutos.</p>
+        <p><strong>Instrucciones:</strong> Batir huevos con azÃºcar hasta cremosa. Agregar leche, vainilla y mantequilla. Incorporar harina poco a poco. Verter en moldes y hornear a 180Â°C por 20 minutos.</p>
     </article>
 
     <article class="menu">
-        <h2>Menú 3: Torta de Vainilla con Crema</h2>
+        <h2>MenÃº 3: Torta de Vainilla con Crema</h2>
         <ul>
             <li>Harina - 2 tazas</li>
-            <li>Azúcar - 1 1/2 tazas</li>
+            <li>AzÃºcar - 1 1/2 tazas</li>
             <li>Huevos - 4 unidades</li>
             <li>Leche - 1 taza</li>
             <li>Vainilla - 2 cucharaditas</li>
             <li>Crema de leche batida - para decorar</li>
         </ul>
-        <p><strong>Instrucciones:</strong> Mezclar huevos y azúcar, añadir harina tamizada alternando con leche y vainilla. Hornear a 170°C por 35 minutos. Dejar enfriar y cubrir con crema batida.</p>
+        <p><strong>Instrucciones:</strong> Mezclar huevos y azÃºcar, aÃ±adir harina tamizada alternando con leche y vainilla. Hornear a 170Â°C por 35 minutos. Dejar enfriar y cubrir con crema batida.</p>
     </article>
 </section>
 
 <footer>
     <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
 </footer>
+
+<!-- BotÃ³n de WhatsApp -->
+<a href="https://wa.me/5551234567"  target="_blank" class="whatsapp-button">
+    <img src="iconos/whatsapp.png" alt="ContÃ¡ctanos por WhatsApp">
+</a>
+
+<script src="js/idioma.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>
