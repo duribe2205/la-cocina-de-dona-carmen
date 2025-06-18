@@ -2,14 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Nuestro Trabajo - La Cocina de Do�a Carmen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Trabajo - La Cocina de Doña Carmen</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"  rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <div class="logo">??</div>
-    <h1>La Cocina de Do�a Carmen</h1>
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo La Cocina de Doña Carmen" width="200">
+    </div>
+    <h1>La Cocina de Doña Carmen</h1>
+
+    <div class="selector-idioma">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+        </select>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -20,20 +34,41 @@
     </nav>
 </header>
 
-<section class="galeria">
-    <h2>Galer�a de Im�genes y Videos</h2>
-    <p>Pr�ximamente contenido multimedia sobre nuestras preparaciones artesanales.</p>
-    <img src="imagenes/galletas.jpg" alt="Haciendo galletas">
-    <img src="imagenes/torta.jpg" alt="Decorando una torta">
-    <video controls width="400">
-        <source src="videos/galletas.mp4" type="video/mp4">
-        Tu navegador no soporta video.
-    </video>
+<section class="galeria" data-aos="fade-up">
+    <h2 data-tr="galeria.titulo">Nuestro Trabajo</h2>
+    <p data-tr="galeria.descripcion">Aquí puedes ver cómo preparamos nuestras galletas, ponquesitos y tortas artesanales.</p>
+
+    <div class="galeria-grid">
+        <img src="imagenes/galletas.jpg" alt="Galletas artesanales">
+        <img src="imagenes/ponquesitos.jpg" alt="Ponquesitos recién horneados">
+        <img src="imagenes/torta.jpg" alt="Tortas decoradas">
+    </div>
+
+    <div class="video-section">
+        <video controls width="100%">
+            <source src="videos/demo.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
 </section>
 
 <footer>
     <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
 </footer>
+
+<!-- Botón de WhatsApp -->
+<a href="https://wa.me/5551234567"  target="_blank" class="whatsapp-button">
+    <img src="iconos/whatsapp.png" alt="Contáctanos por WhatsApp">
+</a>
+
+<script src="js/idioma.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>

@@ -2,14 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto - La Cocina de Do�a Carmen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - La Cocina de Doña Carmen</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"  rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <div class="logo">??</div>
-    <h1>La Cocina de Do�a Carmen</h1>
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo La Cocina de Doña Carmen" width="200">
+    </div>
+    <h1>La Cocina de Doña Carmen</h1>
+
+    <div class="selector-idioma">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+        </select>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -20,16 +34,16 @@
     </nav>
 </header>
 
-<section class="formulario-contacto">
-    <h2>Solicita tu Cotizaci�n</h2>
+<section class="formulario-contacto" data-aos="fade-up">
+    <h2 data-tr="contacto.titulo">Solicita tu Cotización</h2>
     <form action="#">
         <label for="nombre">Nombre y Apellido:</label>
         <input type="text" id="nombre" name="nombre" required>
 
-        <label for="telefono">Tel�fono:</label>
+        <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono">
 
-        <label for="correo">Correo Electr�nico:</label>
+        <label for="correo">Correo Electrónico:</label>
         <input type="email" id="correo" name="correo" required>
 
         <label for="comentario">Comentario / Detalles:</label>
@@ -39,7 +53,7 @@
     </form>
 
     <div class="redes">
-        <h3>S�guenos en Redes Sociales</h3>
+        <h3 data-tr="contacto.redes">Síguenos en Redes Sociales</h3>
         <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
         <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
         <a href="#"><img src="iconos/tiktok.png" alt="TikTok"></a>
@@ -50,6 +64,20 @@
 <footer>
     <p>&copy; 2025 Rosenberg Sistemas - Todos los derechos reservados</p>
 </footer>
+
+<!-- Botón de WhatsApp -->
+<a href="https://wa.me/5551234567"  target="_blank" class="whatsapp-button">
+    <img src="iconos/whatsapp.png" alt="Contáctanos por WhatsApp">
+</a>
+
+<script src="js/idioma.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </body>
 </html>
